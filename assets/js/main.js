@@ -268,4 +268,32 @@
 
   /* ---------- 10. Anno footer ---------- */
   const y = $('#year'); if (y) y.textContent = new Date().getFullYear();
+
+  /* ---------- 11. Video hero + lazy play ---------- */
+  (function heroVideo() {
+    const hv = $('.hero-video');
+    if (!hv) return;
+    if (reduceMotion) { try { hv.pause(); } catch (e) {} return; } // resta il poster
+    const kick = () => hv.play().catch(() => {});
+    kick();
+    // alcuni browser/iOS avviano solo dopo la prima interazione
+    ['touchstart', 'click', 'scroll'].forEach(ev =>
+      window.addEventListener(ev, kick, { once: true, passive: true }));
+  })();
+
+  (function lazyVideos() {
+    const vids = $$('.media-img, .gallery video'); // i video di sezione e galleria (l'hero resta sempre attivo)
+    if (!vids.length) return;
+    if (reduceMotion) { vids.forEach(v => { try { v.pause(); } catch (e) {} }); return; }
+    if (!('IntersectionObserver' in window)) { vids.forEach(v => v.play && v.play().catch(() => {})); return; }
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(en => {
+        const v = en.target;
+        if (typeof v.play !== 'function') return;
+        if (en.isIntersecting) { v.play().catch(() => {}); }
+        else { try { v.pause(); } catch (e) {} }
+      });
+    }, { threshold: 0.25 });
+    vids.forEach(v => io.observe(v));
+  })();
 })();

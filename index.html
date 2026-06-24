@@ -123,6 +123,10 @@
 <!-- ============================ HERO ============================ -->
 <section class="hero" id="hero">
   <div class="hero-bg" aria-hidden="true">
+    <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/img/hero-poster.jpg">
+      <source src="uploads/lido.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
     <div class="hero-waves">
       <svg viewBox="0 0 1440 320" preserveAspectRatio="none"><path d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,213.3C672,224,768,224,864,202.7C960,181,1056,139,1152,138.7C1248,139,1344,181,1392,202.7L1440,224L1440,320L0,320Z"></path></svg>
     </div>
@@ -162,7 +166,9 @@
 <section class="section" id="lido">
   <div class="container grid-2">
     <div class="media-card" data-reveal>
-      <img class="media-img ratio-43" src="assets/img/lido.svg" width="800" height="600" loading="lazy" decoding="async" alt="Vista dello stabilimento Bagni Lido Livorno sul mare">
+      <video class="media-img ratio-43" autoplay muted loop playsinline preload="metadata" poster="assets/img/lido.svg" aria-label="Video dello stabilimento Bagni Lido Livorno">
+        <source src="uploads/mare.mp4" type="video/mp4">
+      </video>
     </div>
     <div data-reveal>
       <span class="eyebrow" data-i18n="lido.eyebrow">Il Lido</span>
@@ -293,7 +299,9 @@
       </div>
     </div>
     <div class="media-card" data-reveal>
-      <img class="media-img ratio-43" src="assets/img/ristorante.svg" width="800" height="600" loading="lazy" decoding="async" alt="Ristorante del Bagni Lido Livorno al tramonto">
+      <video class="media-img ratio-43" autoplay muted loop playsinline preload="metadata" poster="assets/img/ristorante.svg" aria-label="Atmosfera del Bagni Lido Livorno">
+        <source src="uploads/mare2.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 </section>
@@ -331,11 +339,11 @@
       <h2 data-i18n="gallery.title">Uno sguardo al Lido</h2>
     </div>
     <div class="gallery" data-reveal-group>
-      <img class="g1" src="assets/img/g1.svg" width="800" height="600" loading="lazy" decoding="async" alt="La spiaggia del Bagni Lido Livorno">
-      <img class="g2" src="assets/img/g2.svg" width="600" height="400" loading="lazy" decoding="async" alt="La piscina del Lido">
-      <img class="g3" src="assets/img/g3.svg" width="600" height="400" loading="lazy" decoding="async" alt="Tramonto sul mare di Livorno">
-      <img class="g4" src="assets/img/g4.svg" width="600" height="400" loading="lazy" decoding="async" alt="Ombrelloni sulla spiaggia">
-      <img class="g5" src="assets/img/g5.svg" width="600" height="400" loading="lazy" decoding="async" alt="Solarium del Bagni Lido">
+      <img class="g1" src="uploads/seasons/summer.webp" width="800" height="600" loading="lazy" decoding="async" alt="Il Bagni Lido Livorno in estate">
+      <video class="g2" autoplay muted loop playsinline preload="none" poster="assets/img/g2.svg" aria-label="Il mare del Lido"><source src="uploads/mare3.mp4" type="video/mp4"></video>
+      <img class="g3" src="uploads/events/boxe.webp" width="600" height="400" loading="lazy" decoding="async" alt="Evento sportivo al Lido">
+      <video class="g4" autoplay muted loop playsinline preload="none" poster="assets/img/g4.svg" aria-label="Onde sul mare di Livorno"><source src="uploads/mare4.mp4" type="video/mp4"></video>
+      <img class="g5" src="uploads/seasons/autumn.webp" width="600" height="400" loading="lazy" decoding="async" alt="Il Bagni Lido Livorno in autunno">
     </div>
   </div>
 </section>
