@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Spiaggia">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bfe9f0"/><stop offset="1" stop-color="#7fd0dd"/></linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1aa6b8"/><stop offset="1" stop-color="#0c6e84"/></linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="592" cy="132" r="66" fill="#ffd66b" opacity=".95"/>
+  <g transform="translate(0 312)" preserveAspectRatio="none">
+    <rect y="0" width="800" height="288" fill="url(#sea)"/>
+    <path d="M0 40 q150 -28 300 0 t300 0 t300 0 t300 0 t300 0 V600 H0 Z" fill="#ffffff" opacity="0.12"/><path d="M0 80 q150 -28 300 0 t300 0 t300 0 t300 0 t300 0 V600 H0 Z" fill="#ffffff" opacity="0.1"/><path d="M0 130 q150 -28 300 0 t300 0 t300 0 t300 0 t300 0 V600 H0 Z" fill="#ffffff" opacity="0.08"/>
+  </g>
+  
+  
+  <rect x="14" y="560" width="82" height="26" rx="13" fill="#0a2a43" opacity=".55"/>
+  <text x="28" y="578" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="13" fill="#fff" opacity=".95">Spiaggia</text>
+</svg>

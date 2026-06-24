@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-label="Tramonto">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd9a8"/><stop offset="1" stop-color="#ff9e6d"/></linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d2683f"/><stop offset="1" stop-color="#7a3b53"/></linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#sky)"/>
+  <circle cx="444" cy="136" r="44" fill="#ffb14d" opacity=".95"/>
+  <g transform="translate(0 208)" preserveAspectRatio="none">
+    <rect y="0" width="600" height="192" fill="url(#sea)"/>
+    <path d="M0 40 q150 -28 300 0 t300 0 t300 0 t300 0 t300 0 V600 H0 Z" fill="#ffffff" opacity="0.12"/><path d="M0 80 q150 -28 300 0 t300 0 t300 0 t300 0 t300 0 V600 H0 Z" fill="#ffffff" opacity="0.1"/><path d="M0 130 q150 -28 300 0 t300 0 t300 0 t300 0 t300 0 V600 H0 Z" fill="#ffffff" opacity="0.08"/>
+  </g>
+  
+  
+  <rect x="14" y="360" width="82" height="26" rx="13" fill="#0a2a43" opacity=".55"/>
+  <text x="28" y="378" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="13" fill="#fff" opacity=".95">Tramonto</text>
+</svg>

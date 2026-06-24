@@ -1,0 +1,7 @@
+# Cartelle locali/dev
+.claude/
+node_modules/
+# File temporanei OS
+Thumbs.db
+.DS_Store
+*.log
