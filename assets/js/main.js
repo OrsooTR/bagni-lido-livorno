@@ -317,4 +317,30 @@
     }, { threshold: 0.25 });
     vids.forEach(v => io.observe(v));
   })();
+
+  /* ---------- 12. Consenso cookie + caricamento mappa ---------- */
+  (function cookieConsent() {
+    const KEY = 'lido_consent';
+    const banner = $('#cookieBanner');
+    function getConsent() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+    function loadMap() {
+      const f = $('#mapCard iframe');
+      if (f && f.dataset.src && !f.src) f.src = f.dataset.src;
+      const overlay = $('#mapConsent');
+      if (overlay) overlay.style.display = 'none';
+    }
+    function setConsent(v) {
+      try { localStorage.setItem(KEY, v); } catch (e) {}
+      if (banner) banner.classList.remove('show');
+      if (v === 'accepted') loadMap();
+    }
+    const consent = getConsent();
+    if (consent === 'accepted') loadMap();
+    else if (consent !== 'rejected' && banner) setTimeout(() => banner.classList.add('show'), 700);
+
+    $('#cookieAccept') && $('#cookieAccept').addEventListener('click', () => setConsent('accepted'));
+    $('#cookieReject') && $('#cookieReject').addEventListener('click', () => setConsent('rejected'));
+    // Pulsante sulla mappa: consenso puntuale per la sola mappa
+    $('#mapEnable') && $('#mapEnable').addEventListener('click', loadMap);
+  })();
 })();

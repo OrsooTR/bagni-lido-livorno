@@ -27,6 +27,20 @@ window.I18N = {
     "lido.li3": "Primo soccorso e defibrillatore (DAE) sempre presenti",
     "lido.cta": "Tutti i servizi",
 
+    "story.eyebrow": "La nostra storia", "story.title": "Dal 1913 sul mare di Livorno",
+    "story.sub": "Una guida del 1913 cita già il futuro Bagni Lido. Da allora, generazioni di livornesi sono cresciute qui.",
+    "story.quote": "«Questa parte di mare è il regalo che non avrei potuto confezionare meglio per tutti quei carissimi amici che sono sempre stati i clienti dei Bagni Lido.»",
+    "tl.1.t": "Un nuovo inizio", "tl.1.d": "Lo stabilimento si trasferisce nella posizione attuale, presso la Rotonda d'Ardenza.",
+    "tl.2.t": "Una nuova era", "tl.2.d": "Enrico Ganni rileva lo stabilimento: inizia una grande fase di sviluppo.",
+    "tl.3.t": "Nasce la piscina", "tl.3.d": "Con trampolino e scivolo, diventa subito il cuore del Lido e dei ricordi di intere generazioni.",
+    "tl.4.t": "La famiglia Ceccherelli", "tl.4.d": "Nuove energie, attività sportive e intrattenimento.",
+    "tl.5.t": "La grande ristrutturazione", "tl.5.d": "Riqualificato il lato sud e completamente rinnovata la grande terrazza sul mare.",
+    "tl.6.y": "Oggi", "tl.6.t": "Lo stabilimento più amato", "tl.6.d": "Pannelli fotovoltaici invisibili sopra le cabine e due vittorie al concorso de Il Tirreno.",
+
+    "staff.eyebrow": "Il nostro staff", "staff.title": "Le persone del Lido", "staff.sub": "Chi rende speciale ogni giornata al Bagni Lido.",
+    "staff.r1": "Amministratore Delegato", "staff.r3": "Direttore", "staff.r4": "Vice Direttore",
+    "staff.r5": "Responsabile Assistenti Bagnanti", "staff.r6": "Vice Responsabile Assistenti Bagnanti", "staff.r7": "Social Media Manager",
+
     "services.eyebrow": "Servizi", "services.title": "Tutto quello che ti serve, a riva",
     "services.sub": "Dalla piscina al pontile, dalla cucina all'animazione: una giornata completa senza mai muoverti dal Lido.",
     "svc.pool.t": "Piscina adulti", "svc.pool.d": "Vasca panoramica con vista mare per nuotare e rilassarsi.",
@@ -89,6 +103,11 @@ window.I18N = {
 
     "mbar.book": "Prenota", "mbar.call": "Chiama", "mbar.map": "Mappa",
 
+    "cookie.banner": "Usiamo cookie tecnici e, con il tuo consenso, contenuti di terze parti (es. la mappa). Leggi la <a href=\"cookie.html\">Cookie Policy</a>.",
+    "cookie.accept": "Accetta", "cookie.reject": "Rifiuta",
+    "cookie.mapBlocked": "La mappa è disattivata finché non accetti i cookie di terze parti.",
+    "cookie.mapEnable": "Mostra la mappa",
+
     "form.required": "Compila tutti i campi obbligatori.",
     "form.sending": "Invio in corso…",
     "form.ok": "Grazie! Ti risponderemo al più presto.",
@@ -118,6 +137,20 @@ window.I18N = {
     "lido.li2": "ISO 9001 and ISO 13009 certified",
     "lido.li3": "First aid and defibrillator (AED) always on site",
     "lido.cta": "All services",
+
+    "story.eyebrow": "Our story", "story.title": "On the Livorno seafront since 1913",
+    "story.sub": "A 1913 guide already mentions the future Bagni Lido. Since then, generations of locals have grown up here.",
+    "story.quote": "“This stretch of sea is the gift I couldn't have wrapped any better for all those dear friends who have always been the guests of Bagni Lido.”",
+    "tl.1.t": "A new beginning", "tl.1.d": "The establishment moves to its current spot, by the Rotonda d'Ardenza.",
+    "tl.2.t": "A new era", "tl.2.d": "Enrico Ganni takes over the establishment: a great phase of growth begins.",
+    "tl.3.t": "The pool is born", "tl.3.d": "With diving board and slide, it instantly becomes the heart of the Lido and of generations of memories.",
+    "tl.4.t": "The Ceccherelli family", "tl.4.d": "New energy, sports activities and entertainment.",
+    "tl.5.t": "The big renovation", "tl.5.d": "The south side is redeveloped and the great sea-view terrace completely renewed.",
+    "tl.6.y": "Today", "tl.6.t": "The most loved beach club", "tl.6.d": "Invisible solar panels above the cabins and two wins in Il Tirreno's contest.",
+
+    "staff.eyebrow": "Our staff", "staff.title": "The people of the Lido", "staff.sub": "The people who make every day at Bagni Lido special.",
+    "staff.r1": "CEO", "staff.r3": "Director", "staff.r4": "Deputy Director",
+    "staff.r5": "Head Lifeguard", "staff.r6": "Deputy Head Lifeguard", "staff.r7": "Social Media Manager",
 
     "services.eyebrow": "Services", "services.title": "Everything you need, right by the water",
     "services.sub": "From the pool to the pier, from the kitchen to kids' entertainment: a full day without ever leaving the Lido.",
@@ -180,6 +213,11 @@ window.I18N = {
     "footer.credits": "All rights reserved",
 
     "mbar.book": "Book", "mbar.call": "Call", "mbar.map": "Map",
+
+    "cookie.banner": "We use technical cookies and, with your consent, third-party content (e.g. the map). Read the <a href=\"cookie.html\">Cookie Policy</a>.",
+    "cookie.accept": "Accept", "cookie.reject": "Reject",
+    "cookie.mapBlocked": "The map is disabled until you accept third-party cookies.",
+    "cookie.mapEnable": "Show the map",
 
     "form.required": "Please fill in all required fields.",
     "form.sending": "Sending…",
