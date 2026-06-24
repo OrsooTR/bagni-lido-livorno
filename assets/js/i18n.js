@@ -45,7 +45,7 @@ window.I18N = {
 
     "rest.eyebrow": "Ristorante", "rest.title": "Sapori di mare, dal pranzo al tramonto",
     "rest.p1": "Cucina di pesce fresco, pizze cotte come si deve e aperitivi con i piedi quasi nella sabbia. Il nostro ristorante è aperto a chi passa la giornata al Lido e a chi vuole solo una cena con vista.",
-    "rest.reserve": "Prenota un tavolo", "rest.menu": "Scopri il menù",
+    "rest.reserve": "Prenota un tavolo", "rest.menu": "Scopri il menù", "rest.call": "Chiama il ristorante",
 
     "events.eyebrow": "Lido Festival", "events.title": "Eventi dell'estate",
     "events.sub": "Cinema sotto le stelle, tribute band, DJ set e pomeriggi per le famiglie. Filtra per categoria.",
@@ -131,7 +131,7 @@ window.I18N = {
 
     "rest.eyebrow": "Restaurant", "rest.title": "Flavours of the sea, from lunch to sunset",
     "rest.p1": "Fresh fish, properly baked pizza and aperitifs almost with your feet in the sand. Our restaurant is open both to those spending the day at the Lido and to anyone who just wants dinner with a view.",
-    "rest.reserve": "Book a table", "rest.menu": "See the menu",
+    "rest.reserve": "Book a table", "rest.menu": "See the menu", "rest.call": "Call the restaurant",
 
     "events.eyebrow": "Lido Festival", "events.title": "Summer events",
     "events.sub": "Open-air cinema, tribute bands, DJ sets and afternoons for families. Filter by category.",
