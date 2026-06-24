@@ -28,6 +28,7 @@
     });
     try { localStorage.setItem('lido_lang', lang); } catch (e) {}
     if (typeof window.renderEvents === 'function') window.renderEvents();
+    if (typeof window.renderPricing === 'function') window.renderPricing();
   }
   function initLang() {
     let lang = 'it';
@@ -96,7 +97,7 @@
   }
 
   /* ---------- 6. Nav active section ---------- */
-  const sections = ['lido', 'servizi', 'ristorante', 'eventi', 'contatti']
+  const sections = ['lido', 'servizi', 'tariffe', 'ristorante', 'eventi', 'contatti']
     .map(id => document.getElementById(id)).filter(Boolean);
   const navLinks = $$('#mainNav a');
   if ('IntersectionObserver' in window) {
@@ -182,6 +183,26 @@
 
   renderEvents();
   injectEventsLD();
+
+  /* ---------- 7b. Tariffe (render bilingue) ---------- */
+  function renderPricing() {
+    const grid = $('#pricingGrid');
+    if (!grid || !Array.isArray(window.LIDO_PRICING)) return;
+    const lang = document.body.dataset.lang || 'it';
+    grid.innerHTML = window.LIDO_PRICING.map(group => {
+      const rows = group.items.map(it => {
+        const note = it.note ? `<span class="price-note">${esc(it.note[lang] || it.note.it)}</span>` : '';
+        return `<li><span class="price-label">${esc(it[lang] || it.it)}${note}</span><span class="price-val">${esc(it.price)}</span></li>`;
+      }).join('');
+      const per = group.per ? `<span class="price-per">${esc(group.per[lang] || group.per.it)}</span>` : '';
+      return `<article class="price-card">
+        <h3>${esc(group[lang] || group.it)} ${per}</h3>
+        <ul>${rows}</ul>
+      </article>`;
+    }).join('');
+  }
+  window.renderPricing = renderPricing;
+  renderPricing();
 
   /* ---------- 8. Form (backend PHP + fallback mailto) ---------- */
   function t(key) { const l = document.body.dataset.lang || 'it'; return (dict[l] && dict[l][key]) || key; }

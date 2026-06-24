@@ -8,7 +8,11 @@ window.I18N = {
   it: {
     "skip": "Vai al contenuto",
     "nav.lido": "Il Lido", "nav.services": "Servizi", "nav.restaurant": "Ristorante",
-    "nav.events": "Eventi", "nav.contact": "Contatti", "nav.book": "Prenota",
+    "nav.events": "Eventi", "nav.contact": "Contatti", "nav.book": "Prenota", "nav.pricing": "Tariffe",
+    "pricing.eyebrow": "Info e tariffe", "pricing.title": "Le nostre tariffe",
+    "pricing.sub": "Soluzioni per ogni esigenza, dal biglietto giornaliero all'abbonamento stagionale.",
+    "pricing.note": "Per cabine, ombrelloni e abbonamenti contattaci: ti aiutiamo a scegliere la soluzione migliore.",
+    "pricing.cta": "Contattaci",
 
     "hero.title": "La tua <em>casa estiva</em><br>sul mare",
     "hero.sub": "Stabilimento balneare con piscine, ristorante, animazione ed eventi. Dal mattino al tramonto, tutta l'estate — e oltre.",
@@ -46,11 +50,13 @@ window.I18N = {
     "rest.eyebrow": "Ristorante", "rest.title": "Sapori di mare, dal pranzo al tramonto",
     "rest.p1": "Cucina di pesce fresco, pizze cotte come si deve e aperitivi con i piedi quasi nella sabbia. Il nostro ristorante è aperto a chi passa la giornata al Lido e a chi vuole solo una cena con vista.",
     "rest.reserve": "Prenota un tavolo", "rest.menu": "Scopri il menù", "rest.call": "Chiama il ristorante",
+    "menu.title": "Il nostro menù", "menu.antipasti": "Antipasti", "menu.primi": "Primi piatti", "menu.secondi": "Secondi piatti",
+    "menu.note": "Il menù può variare in base al pescato e alla stagionalità. Chiedi al personale le proposte del giorno.",
 
     "events.eyebrow": "Lido Festival", "events.title": "Eventi dell'estate",
     "events.sub": "Cinema sotto le stelle, tribute band, DJ set e pomeriggi per le famiglie. Filtra per categoria.",
     "events.f.all": "Tutti", "events.f.cinema": "Cinema", "events.f.music": "Musica", "events.f.dj": "DJ set", "events.f.family": "Famiglia",
-    "events.note": "Il calendario completo viene aggiornato a inizio stagione. Seguici sui social per non perdere nessun evento.",
+    "events.note": "Tutte le domeniche pomeriggio, dalle 16:00 alle 18:00, il Lido si anima con attività e intrattenimento per bambini e famiglie.",
     "events.empty": "Nessun evento in questa categoria.",
     "month.jul": "Lug", "month.aug": "Ago", "month.sep": "Set",
     "ev.1.t": "Cinema sotto le stelle", "ev.1.d": "Proiezione serale sul lungomare. Ingresso libero.",
@@ -94,7 +100,11 @@ window.I18N = {
   en: {
     "skip": "Skip to content",
     "nav.lido": "The Lido", "nav.services": "Services", "nav.restaurant": "Restaurant",
-    "nav.events": "Events", "nav.contact": "Contact", "nav.book": "Book",
+    "nav.events": "Events", "nav.contact": "Contact", "nav.book": "Book", "nav.pricing": "Prices",
+    "pricing.eyebrow": "Info & prices", "pricing.title": "Our prices",
+    "pricing.sub": "Options for every need, from a day ticket to a season pass.",
+    "pricing.note": "For cabins, umbrellas and season passes get in touch: we'll help you choose the best option.",
+    "pricing.cta": "Contact us",
 
     "hero.title": "Your <em>summer home</em><br>by the sea",
     "hero.sub": "A beach club with pools, restaurant, entertainment and events. From sunrise to sunset, all summer long — and beyond.",
@@ -130,13 +140,15 @@ window.I18N = {
     "seasons.s3.tag": "Autumn", "seasons.s3.t": "Golden sunsets", "seasons.s3.d": "Sunset aperitifs and relaxing off-season weekends.",
 
     "rest.eyebrow": "Restaurant", "rest.title": "Flavours of the sea, from lunch to sunset",
-    "rest.p1": "Fresh fish, properly baked pizza and aperitifs almost with your feet in the sand. Our restaurant is open both to those spending the day at the Lido and to anyone who just wants dinner with a view.",
+    "rest.p1": "The Bagni Lido restaurant is born from a passion for the sea and for Livorno's cuisine. For years we've welcomed our guests with simple yet authentic dishes, made with fresh fish and quality ingredients. Here every lunch and dinner becomes an experience: the scent of the sea, the sound of the waves and a kitchen that blends tradition and creativity.",
     "rest.reserve": "Book a table", "rest.menu": "See the menu", "rest.call": "Call the restaurant",
+    "menu.title": "Our menu", "menu.antipasti": "Starters", "menu.primi": "First courses", "menu.secondi": "Main courses",
+    "menu.note": "The menu may change with the daily catch and the season. Ask our staff for today's specials.",
 
     "events.eyebrow": "Lido Festival", "events.title": "Summer events",
     "events.sub": "Open-air cinema, tribute bands, DJ sets and afternoons for families. Filter by category.",
     "events.f.all": "All", "events.f.cinema": "Cinema", "events.f.music": "Music", "events.f.dj": "DJ set", "events.f.family": "Family",
-    "events.note": "The full calendar is updated at the start of the season. Follow us on social media so you don't miss a thing.",
+    "events.note": "Every Sunday afternoon, from 4 to 6 PM, the Lido comes alive with activities and entertainment for kids and families.",
     "events.empty": "No events in this category.",
     "month.jul": "Jul", "month.aug": "Aug", "month.sep": "Sep",
     "ev.1.t": "Cinema under the stars", "ev.1.d": "Evening screening on the seafront. Free entry.",

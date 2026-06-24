@@ -255,6 +255,18 @@ h2 + p{margin-top:1rem}
    ========================================================= */
 .rest-actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:1.8rem}
 
+/* ---- Menù ristorante ---- */
+.menu-wrap{margin-top:4rem;scroll-margin-top:90px}
+.menu-heading{font-family:var(--font-disp);font-weight:500;font-size:clamp(1.6rem,3vw,2.2rem);text-align:center;margin-bottom:2.4rem;color:#fff}
+.menu-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.menu-cat{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);padding:1.8rem 1.6rem}
+.menu-cat h4{font-family:var(--font-disp);font-weight:500;font-size:1.3rem;color:var(--aqua);margin-bottom:1.1rem;padding-bottom:.7rem;border-bottom:1px solid rgba(255,255,255,.16)}
+.menu-cat ul{list-style:none;display:grid;gap:.95rem}
+.menu-cat li{display:flex;flex-direction:column;gap:.15rem}
+.menu-cat .dish{color:#fff;font-weight:600;font-size:1rem}
+.menu-cat .dish-note{color:rgba(255,255,255,.62);font-size:.85rem;font-style:italic}
+.menu-foot{text-align:center;color:rgba(255,255,255,.7);font-size:.9rem;margin-top:2rem}
+
 /* =========================================================
    EVENTI
    ========================================================= */
@@ -276,6 +288,22 @@ h2 + p{margin-top:1rem}
 .event-time{display:inline-block;margin-top:.5rem;font-size:.8rem;font-weight:600;color:var(--teal-600);background:var(--bg-tint);padding:.2rem .6rem;border-radius:999px}
 .events-empty{text-align:center;color:var(--muted);margin-top:1rem;font-size:.95rem}
 .events-note{text-align:center;color:var(--muted);margin-top:2rem;font-size:.95rem}
+
+/* =========================================================
+   TARIFFE
+   ========================================================= */
+.pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.4rem}
+.price-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.7rem 1.6rem;transition:transform .3s var(--ease),box-shadow .3s}
+.price-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.price-card h3{font-family:var(--font-disp);font-weight:500;font-size:1.35rem;color:var(--teal);margin-bottom:1.1rem;padding-bottom:.7rem;border-bottom:2px solid var(--sand-200);display:flex;flex-wrap:wrap;align-items:baseline;gap:.5rem}
+.price-per{font-family:var(--font-sans);font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.price-card ul{list-style:none;display:grid;gap:.8rem}
+.price-card li{display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
+.price-label{display:flex;flex-direction:column;color:var(--ink);font-weight:600;font-size:.95rem}
+.price-note{font-weight:400;font-size:.8rem;color:var(--muted);margin-top:.15rem}
+.price-val{flex:0 0 auto;font-weight:800;color:var(--teal);font-size:1.05rem}
+.pricing-note{text-align:center;color:var(--muted);margin-top:2rem;font-size:.95rem}
+.pricing-cta{text-align:center;margin-top:1.4rem}
 
 /* =========================================================
    GALLERIA

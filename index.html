@@ -100,6 +100,7 @@
     <nav class="main-nav" id="mainNav" aria-label="Menu principale">
       <a href="#lido" data-i18n="nav.lido">Il Lido</a>
       <a href="#servizi" data-i18n="nav.services">Servizi</a>
+      <a href="#tariffe" data-i18n="nav.pricing">Tariffe</a>
       <a href="#ristorante" data-i18n="nav.restaurant">Ristorante</a>
       <a href="#eventi" data-i18n="nav.events">Eventi</a>
       <a href="#contatti" data-i18n="nav.contact">Contatti</a>
@@ -284,16 +285,34 @@
   </div>
 </section>
 
+<!-- ============================ TARIFFE ============================ -->
+<section class="section section-tint" id="tariffe">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow" data-i18n="pricing.eyebrow">Info e tariffe</span>
+      <h2 data-i18n="pricing.title">Le nostre tariffe</h2>
+      <p class="lead" data-i18n="pricing.sub">Soluzioni per ogni esigenza, dal biglietto giornaliero all'abbonamento stagionale.</p>
+    </div>
+    <div class="pricing-grid" id="pricingGrid" data-reveal-group>
+      <!-- Popolato da assets/js/pricing.js -->
+    </div>
+    <p class="pricing-note" data-reveal data-i18n="pricing.note">Per cabine, ombrelloni e abbonamenti contattaci: ti aiutiamo a scegliere la soluzione migliore.</p>
+    <div class="pricing-cta" data-reveal>
+      <a class="btn btn-primary" href="#contatti" data-i18n="pricing.cta">Contattaci</a>
+    </div>
+  </div>
+</section>
+
 <!-- ============================ RISTORANTE ============================ -->
 <section class="section section-dark" id="ristorante">
   <div class="container grid-2 reverse">
     <div data-reveal>
       <span class="eyebrow light" data-i18n="rest.eyebrow">Ristorante</span>
       <h2 data-i18n="rest.title">Sapori di mare, dal pranzo al tramonto</h2>
-      <p data-i18n="rest.p1">Cucina di pesce fresco, pizze cotte come si deve e aperitivi con i piedi quasi nella sabbia. Il nostro ristorante è aperto a chi passa la giornata al Lido e a chi vuole solo una cena con vista.</p>
+      <p data-i18n="rest.p1">Il ristorante dei Bagni Lido nasce dalla passione per il mare e per la cucina livornese. Da anni accogliamo i nostri ospiti con piatti semplici ma autentici, preparati con pesce fresco e ingredienti di qualità. Qui ogni pranzo e ogni cena diventano un'esperienza: il profumo del mare, il suono delle onde e una cucina che unisce tradizione e creatività.</p>
       <div class="rest-actions">
-        <a class="btn btn-primary" href="#contatti" data-i18n="rest.reserve">Prenota un tavolo</a>
-        <a class="btn btn-ghost-light" href="tel:+390586501153" data-i18n="rest.call">Chiama il ristorante</a>
+        <a class="btn btn-primary" href="#menu" data-i18n="rest.menu">Scopri il menù</a>
+        <a class="btn btn-ghost-light" href="#contatti" data-i18n="rest.reserve">Prenota un tavolo</a>
       </div>
     </div>
     <div class="media-card" data-reveal>
@@ -301,6 +320,44 @@
         <source src="uploads/mare.mp4" type="video/mp4">
       </video>
     </div>
+  </div>
+
+  <div class="container menu-wrap" id="menu">
+    <h3 class="menu-heading" data-reveal data-i18n="menu.title">Il nostro menù</h3>
+    <div class="menu-cols" data-reveal-group>
+      <div class="menu-cat">
+        <h4 data-i18n="menu.antipasti">Antipasti</h4>
+        <ul>
+          <li><span class="dish">Zuppetta di cozze</span><span class="dish-note">con sfoglia di pane croccante</span></li>
+          <li><span class="dish">Baccalà fritto</span><span class="dish-note">su cipolla caramellata</span></li>
+          <li><span class="dish">Razza</span><span class="dish-note">burro e salvia</span></li>
+          <li><span class="dish">Calamaro</span><span class="dish-note">aceto balsamico e miele</span></li>
+          <li><span class="dish">Coccettino di mare</span></li>
+        </ul>
+      </div>
+      <div class="menu-cat">
+        <h4 data-i18n="menu.primi">Primi piatti</h4>
+        <ul>
+          <li><span class="dish">Spaghetti allo scoglio</span></li>
+          <li><span class="dish">Spaghetti vongole e limone</span></li>
+          <li><span class="dish">Paccheri allo sgusciato di mare</span></li>
+          <li><span class="dish">Riso nero</span></li>
+          <li><span class="dish">Raviolo agli scampi</span></li>
+          <li><span class="dish">Mezze maniche alla gricia</span></li>
+        </ul>
+      </div>
+      <div class="menu-cat">
+        <h4 data-i18n="menu.secondi">Secondi piatti</h4>
+        <ul>
+          <li><span class="dish">Frittura di calamari</span><span class="dish-note">gamberi e verdure</span></li>
+          <li><span class="dish">Tagliata di tonno</span><span class="dish-note">in crosta di sesamo nero</span></li>
+          <li><span class="dish">Orata al forno con patate</span></li>
+          <li><span class="dish">Padellata di mare</span></li>
+          <li><span class="dish">Tagliata di manzo</span><span class="dish-note">con rucola e grana</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="menu-foot" data-reveal data-i18n="menu.note">Il menù può variare in base al pescato e alla stagionalità. Chiedi al personale le proposte del giorno.</p>
   </div>
 </section>
 
@@ -480,10 +537,10 @@
 
     <div class="footer-col">
       <h4 data-i18n="footer.info">Informazioni</h4>
-      <a href="assets/regolamento-2026.pdf" target="_blank" rel="noopener" data-i18n="footer.rules">Regolamento 2026</a>
-      <a href="#" data-i18n="footer.privacy">Privacy Policy</a>
-      <a href="#" data-i18n="footer.cookie">Cookie Policy</a>
-      <span class="iso">ISO 9001 · ISO 13009</span>
+      <a href="documents/regolamento.pdf" target="_blank" rel="noopener" data-i18n="footer.rules">Regolamento 2026</a>
+      <a href="documents/iso-9001.pdf" target="_blank" rel="noopener">Certificazione ISO 9001</a>
+      <a href="documents/iso-13009.pdf" target="_blank" rel="noopener">Certificazione ISO 13009</a>
+      <a href="documents/politica-sgi.pdf" target="_blank" rel="noopener">Politica SGI</a>
     </div>
 
     <div class="footer-col">
@@ -520,6 +577,7 @@
 <!-- ============================ SCRIPT ============================ -->
 <script src="assets/js/i18n.js" defer></script>
 <script src="assets/js/events.js" defer></script>
+<script src="assets/js/pricing.js" defer></script>
 <script src="assets/js/main.js" defer></script>
 </body>
 </html>
