@@ -47,16 +47,15 @@ Sono i file ufficiali presi dal sito originale:
 - Palette ufficiale: **blu `#0054a4`** + bianco (definita in `:root` di `style.css`).
 - `og-cover.jpg` — generata componendo il logo ufficiale su sfondo blu brand.
 
-### 4. Foto reali (priorità alta)
-Le immagini-foto in `assets/img/` sono **segnaposto SVG** (~1–1,6 KB l'uno) già collegati.
-Sostituiscili con foto reali mantenendo gli stessi nomi (o aggiorna i `src` in `index.html`):
-- `og-cover.jpg` (1200×630) — anteprima social. Ne ho generata una di brand: **sostituiscila con una foto reale**.
-- `lido.svg`, `ristorante.svg`, `g1`–`g5.svg` → foto. Consigliato **WebP**, max ~150 KB, larghezza ~1600px.
-- Icone PWA già generate: `apple-touch-icon.png`, `icon-192/512.png`, `favicon.png`.
+### 4. Media (video e foto reali — già integrati dal sito originale)
+In `uploads/` ci sono i **media reali** presi dal sito originale:
+- **Video**: `lido.mp4` (hero, compresso 46 MB → 3 MB), `mare.mp4`–`mare4.mp4` (sezioni e galleria). Poster: `assets/img/hero-poster.jpg`.
+- **Foto stagioni**: `uploads/seasons/spring|summer|autumn.webp` (card stagioni + galleria).
+- **Evento**: `uploads/events/boxe.webp` (ottimizzata 2,9 MB → 36 KB).
+- Le icone-servizio del vecchio sito (1024² / ~100 KB l'una) NON sono state usate: sostituite con **SVG inline** (~1 KB).
+- Gli SVG `lido/ristorante/g2/g4.svg` restano come **poster** dei video mentre caricano.
 
-Per rigenerare i segnaposto: `node tools/gen-placeholders.cjs`.
-
-> Nota: le icone dei servizi del vecchio sito erano 1024×1024 / ~100 KB. Qui sono **SVG inline** (~1 KB totali).
+Da aggiungere quando disponibili (non presenti nell'originale): una **foto dedicata al ristorante** e una **`og-cover.jpg`** fotografica (ora è di brand col logo). 9 delle 10 immagini-evento del vecchio sito non esistevano più sul server (solo `boxe` era valida).
 
 ### 5. Contenuti vari
 - **Sponsor**: sezione `#sponsor`, sostituisci i nomi testuali con i loghi `<img>` reali (ottimizzati).
