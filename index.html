@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#0054a4">
+  <!-- Tema (applicato subito per evitare il flash) -->
+  <script>(function(){try{var t=localStorage.getItem('lido_theme')||(window.matchMedia&&window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 
   <!-- ============ SEO ============ -->
   <title>Bagni Lido Livorno · Stabilimento balneare, piscine, ristorante ed eventi</title>
@@ -111,6 +113,10 @@
         <button type="button" data-setlang="it" class="is-active" aria-pressed="true">IT</button>
         <button type="button" data-setlang="en" aria-pressed="false">EN</button>
       </div>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Tema chiaro/scuro" aria-pressed="false">
+        <svg class="ico-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" fill="currentColor"/></svg>
+        <svg class="ico-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.3" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.1 5.1l1.5 1.5M17.4 17.4l1.5 1.5M18.9 5.1l-1.5 1.5M6.6 17.4l-1.5 1.5"/></g></svg>
+      </button>
       <a class="btn btn-primary btn-sm" href="https://widget.spiagge.it/stabilimenti-balneari/prenotazione/it-li-57128-bagni-lido/" target="_blank" rel="noopener" data-i18n="nav.book">Prenota</a>
       <button class="nav-toggle" id="navToggle" aria-label="Apri menu" aria-expanded="false" aria-controls="mainNav">
         <span></span><span></span><span></span>
@@ -164,10 +170,14 @@
 </section>
 
 <!-- ============================ PANORAMA ============================ -->
-<section class="panorama" aria-label="Vista aerea del Bagni Lido Livorno">
-  <img src="uploads/photos/aerial-top.webp" width="1400" height="932" loading="lazy" decoding="async" alt="Vista aerea dall'alto del Bagni Lido Livorno: piscina, campo da gioco, ombrelloni e pontile barche">
-  <div class="panorama-cap">
-    <span class="pill" data-i18n="panorama.cap">Lo stabilimento visto dall'alto</span>
+<section class="panorama-sec" aria-label="Vista aerea del Bagni Lido Livorno">
+  <div class="container">
+    <figure class="panorama">
+      <img src="uploads/photos/aerial-top.webp" width="860" height="484" loading="lazy" decoding="async" alt="Vista aerea dall'alto del Bagni Lido Livorno: piscina, campo da gioco, ombrelloni e pontile barche">
+      <figcaption class="panorama-cap">
+        <span class="pill" data-i18n="panorama.cap">Lo stabilimento visto dall'alto</span>
+      </figcaption>
+    </figure>
   </div>
 </section>
 

@@ -7,6 +7,24 @@
   const $$ = (s, c = document) => Array.from(c.querySelectorAll(s));
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  /* ---------- 0. Tema chiaro/scuro ---------- */
+  (function theme() {
+    const KEY = 'lido_theme';
+    const root = document.documentElement;
+    const btn = $('#themeToggle');
+    function apply(t) {
+      root.setAttribute('data-theme', t);
+      if (btn) btn.setAttribute('aria-pressed', t === 'dark' ? 'true' : 'false');
+      const meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute('content', t === 'dark' ? '#0a1826' : '#0054a4');
+      try { localStorage.setItem(KEY, t); } catch (e) {}
+    }
+    // tema iniziale già impostato dallo script inline nel <head>; sincronizziamo aria
+    const current = root.getAttribute('data-theme') || 'light';
+    if (btn) btn.setAttribute('aria-pressed', current === 'dark' ? 'true' : 'false');
+    if (btn) btn.addEventListener('click', () => apply(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'));
+  })();
+
   /* ---------- 1. Lingua ---------- */
   const dict = window.I18N || { it: {}, en: {} };
   function applyLang(lang) {
