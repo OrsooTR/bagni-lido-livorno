@@ -20,6 +20,7 @@ window.I18N = {
     "hero.stat1": "Piscine", "hero.stat2": "Eventi a stagione", "hero.stat3": "Giorni di accoglienza",
     "hero.live": "Livorno ora", "hero.water": "Acqua",
 
+    "panorama.cap": "Lo stabilimento visto dall'alto",
     "lido.eyebrow": "Il Lido", "lido.title": "Un pezzo di mare che diventa casa",
     "lido.p1": "Affacciato sul lungomare di Livorno, il Bagni Lido è molto più di uno stabilimento balneare: è il posto dove le giornate iniziano con un tuffo e finiscono al tramonto, tra musica e buona cucina. Spazi pensati per famiglie, sportivi e per chi cerca semplicemente relax.",
     "lido.li1": "Accesso facilitato e servizi per persone con disabilità",
@@ -131,6 +132,7 @@ window.I18N = {
     "hero.stat1": "Pools", "hero.stat2": "Events per season", "hero.stat3": "Days of welcome",
     "hero.live": "Livorno now", "hero.water": "Water",
 
+    "panorama.cap": "The establishment seen from above",
     "lido.eyebrow": "The Lido", "lido.title": "A piece of sea that feels like home",
     "lido.p1": "Overlooking the Livorno seafront, Bagni Lido is much more than a beach club: it's where days begin with a dive and end at sunset, between music and great food. Spaces designed for families, sports lovers and anyone simply looking to relax.",
     "lido.li1": "Easy access and services for people with disabilities",
